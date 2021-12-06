@@ -1,0 +1,19 @@
+class Parameter
+{
+int rno;
+String name;
+Parameter(int i,String n)
+{
+rno=i;
+name=n;
+}
+void display()
+{
+System.out.println(rno+" "+name);
+}
+public static void main(String a[])
+{
+Parameter s=new Parameter(65,"praharshitha");
+s.display();
+}
+} 
