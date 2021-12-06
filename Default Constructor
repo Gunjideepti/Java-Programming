@@ -1,0 +1,17 @@
+class Default
+{
+int rno;
+String name;
+void display()
+{
+System.out.println(rno+" "+name);
+}
+public static void main(String a[])
+{
+Default d=new Default();
+Default f=new Default();
+d.display();
+f.display();
+}
+}
+
