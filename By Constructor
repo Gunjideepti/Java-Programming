@@ -1,0 +1,11 @@
+class Bike
+{
+Bike()
+{
+System.out.println("A new bike is ready");
+}
+public static void main(String a[])
+{
+Bike b=new Bike();
+}
+}
