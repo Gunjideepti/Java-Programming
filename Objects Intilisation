@@ -1,0 +1,15 @@
+class Student2
+{
+int rno;
+String name;
+}
+class Student3
+{
+public static void main(String a[])
+{
+Student2 s=new Student2();
+s.rno=63;
+s.name="Gayatri";
+System.out.println(s.rno+" "+s.name);
+}
+}
