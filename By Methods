@@ -1,0 +1,26 @@
+class Student5
+{
+int rno;
+String name;
+void details(int i,String n)
+{
+rno=i;
+name=n;
+}
+void display()
+{
+System.out.println(rno+" "+name);
+}
+}
+class Student6
+{
+public static void main(String a[])
+{
+Student5 s1=new Student5();
+Student5 s2=new Student5();
+s1.details(63,"Deepthi");
+s2.details(64,"Varshini");
+s1.display();
+s2.display();
+}
+}
