@@ -1,0 +1,25 @@
+class Parent
+{
+String lastName="Gunji";
+void display()
+{
+System.out.println("Lastname="+lastName);
+}
+}
+class Child extends Parent
+{
+String firstName="Deepthi";
+void printDetails()
+{
+System.out.println("Firstname="+firstName);
+}
+}
+class Demo
+{
+public static void main(String a[])
+{
+Child c=new Child();
+c.display();
+c.printDetails();
+}
+}
