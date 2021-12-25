@@ -1,0 +1,20 @@
+class Parent
+{
+    String colour="black";
+}
+class Child extends Parent
+{
+  String colour="white";
+  void printColour()
+  {
+      System.out.println("the child colour="+colour);
+      System.out.println("the Parent colour="+super.colour);
+  }
+}
+class Main
+{
+public static void main (String[] args) {
+    Child c=new Child();
+    c.printColour();
+}
+}
