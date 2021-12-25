@@ -1,0 +1,36 @@
+class Employee
+{
+    float salary=40000;
+    void printSalary()
+    {
+        System.out.println("the salary of employee="+salary);
+    }
+}
+class Permanent extends Employee
+{
+      double hike=0.5;
+      void incrementSalary()
+      {
+          printSalary();
+          System.out.println("permenet Employee salary ="+(salary+(salary*hike)));
+      }
+}
+class Temporary extends Employee
+{
+      double hike=0.05;
+      void incrementSalary()
+      {
+          System.out.println("permenet Employee salary ="+(salary+(salary*hike)));
+      }
+}
+ public class Demo
+ {
+     public static void main(String a[])
+     {
+     Permanent p=new Permanent();
+     p.incrementSalary();
+     Temporary t=new Temporary();
+     t.incrementSalary();
+     }
+     
+ }
