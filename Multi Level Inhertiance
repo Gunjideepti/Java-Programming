@@ -1,0 +1,83 @@
+import javax.swing.JOptionPane;
+import java.lang.Math;
+class Student1
+{
+String name;
+void readName()
+{
+name=JOptionPane.showInputDialog("enter name");
+}
+void printName()
+{
+System.out.println("Name="+name);
+}
+}
+class Bio extends Student1
+{
+int roll;
+void rollNo()
+{
+readName();
+roll=Integer.parseInt(JOptionPane.showInputDialog("enter roll no"));
+}
+void printRoll()
+{
+printName();
+System.out.println("Roll No="+roll);
+}
+}
+class Exam extends Bio
+{
+int m1,m2,m3;
+void readMarks()
+{
+rollNo();
+m1=Integer.parseInt(JOptionPane.showInputDialog("enter m1"));
+m2=Integer.parseInt(JOptionPane.showInputDialog("enter m2"));
+m3=Integer.parseInt(JOptionPane.showInputDialog("enter m3"));
+}
+void printMarks()
+{
+printRoll();
+System.out.println("marks1="+m1);
+System.out.println("marks2="+m2);
+System.out.println("marks3="+m3);
+}
+}
+class Average extends Exam
+{
+float avg;
+void printResult()
+{
+printMarks();
+avg=(m1+m2+m3)/3;
+System.out.println("Average="+Math.round(avg));
+if(avg>=90 && avg<100)
+
+ System.out.println("Destinction");
+if(avg>=80 && avg<90)
+ System.out.println("First Class");
+
+if(avg>=70 && avg<80)
+
+ System.out.println("Second Class");
+
+if(avg>=60 && avg<70)
+
+ System.out.println("Third Class");
+
+if(avg<=50)
+  System.out.println("Fail");
+
+}
+}
+class Demo1
+{
+public static void main(String a[])
+{
+Average av=new Average();
+av.readMarks();
+av.printResult();
+}
+}
+
