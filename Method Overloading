@@ -1,0 +1,41 @@
+class Room
+{
+int length,breadth;
+void room1()
+{
+System.out.println("the area of the room without arguements");
+length=10;
+breadth=20;
+}
+void room1(int l)
+{
+System.out.println("the area of the room with one arguements");
+length=l;
+breadth=30;
+}
+void room1(int l,int b)
+{
+System.out.println("the area of the room with two arguements");
+length=l;
+breadth=b;
+}
+void area()
+{
+System.out.println("the area of the room="+length*breadth);
+}
+}
+class Rooms
+{
+public static void main(String args[])
+{
+Room r=new Room();
+r.room1();
+r.area();
+r.room1(10);
+r.area();
+r.room1(40,30);
+r.area();
+}
+}
+
+ 
