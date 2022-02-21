@@ -1,0 +1,22 @@
+class Animal
+{
+    Animal()
+    {
+        System.out.println("everyone's favorite animal Dog");
+    }
+}
+class Pet extends Animal{
+    Pet()
+    {
+         super();
+         System.out.println("dog is a one of the pet animal");
+    }
+    
+}
+public class Main{
+    public static void main(String args[])
+
+    {
+        Pet p=new Pet();
+    }
+}
