@@ -1,0 +1,22 @@
+class SuperClass
+{
+    void showMsg()
+    {
+        System.out.println("it is a parent class method");
+    }
+}
+class SubClass extends SuperClass
+{
+    void show()
+    {
+        System.out.println("it is a child class method");
+    }
+}
+public class Main  {
+    public static void main (String[] args)
+    {
+       SubClass s=new SubClass();
+       s.show();
+       s.showMsg();
+    }
+}
